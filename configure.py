@@ -68,6 +68,7 @@ def cli(**kwargs):
         kwargs['cmake'],
         HERE,
         '--warn-uninitialized',
+        '--no-warn-unused-cli',
         '-G{0}'.format(kwargs['build_generator']),
         '-DCMAKE_BUILD_TYPE={0}'.format(kwargs['build_type']),
         '-DCMAKE_INSTALL_PREFIX={0}'.format(kwargs['prefix']),
